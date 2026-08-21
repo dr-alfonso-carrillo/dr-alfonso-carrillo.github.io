@@ -12,7 +12,137 @@
 </head>
 
 <body>
+/* ==========================================
+   CV PAGE
+========================================== */
 
+
+/* Full-width banner */
+
+.cv-banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Main CV */
+
+.cv-page {
+  padding: 60px 0 100px;
+}
+
+.cv-page .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Main title */
+
+.cv-page h1 {
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+
+/* Individual CV sections */
+
+.cv-section {
+  margin-bottom: 60px;
+}
+
+.cv-section h2 {
+  font-size: 26px;
+  border-top: 3px solid #222;
+  padding-top: 18px;
+  margin-bottom: 30px;
+}
+
+
+/* CV entries */
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.cv-year {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.cv-description h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.cv-description p {
+  margin: 4px 0;
+  line-height: 1.6;
+}
+
+
+/* Normal CV text */
+
+.cv-text {
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+
+/* Download CV button */
+
+.cv-download {
+  margin-top: 70px;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 14px 24px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.cv-button:hover {
+  opacity: 0.75;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .cv-page {
+    padding-top: 40px;
+  }
+
+  .cv-page h1 {
+    font-size: 34px;
+  }
+
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .cv-year {
+    margin-bottom: 3px;
+  }
+
+}
   <!-- =========================
        NAVIGATION
   ========================== -->
