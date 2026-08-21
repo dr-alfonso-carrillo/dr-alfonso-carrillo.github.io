@@ -219,6 +219,61 @@
       font-size: 32px;
     }
 
+    /* =========================
+   FUNDING
+========================= */
+
+.funding-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.funding-section h2 {
+  margin-bottom: 15px;
+}
+
+.funding-intro {
+  margin-bottom: 45px;
+  color: #666;
+}
+
+.funding-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px 65px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.funding-logo {
+  max-width: 170px;
+  max-height: 85px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.funding-logo:hover {
+  transform: scale(1.07);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .funding-logos {
+    gap: 35px;
+  }
+
+  .funding-logo {
+    max-width: 135px;
+    max-height: 70px;
+  }
+
+}
+    
     /* CONTACT */
 
     #contact p {
@@ -565,18 +620,42 @@ in Valencia, Spain.
 </section>
 
 
-<!-- PROJECTS -->
+<!-- Funding Section -->
+<section id="funding" class="funding-section">
+  <div class="container">
+    <h2>Funding</h2>
+    <p class="funding-intro">
+      My research has been supported by:
+    </p>
 
-<section id="projects">
+    <div class="funding-logos">
 
-  <h2>
-    Funding
-  </h2>
+      <img src="images/bbva.png"
+           alt="BBVA Foundation"
+           class="funding-logo">
 
-  <p>
-    Current and selected research projects will appear here.
-  </p>
+      <img src="images/lacaixa.png"
+           alt="la Caixa Foundation"
+           class="funding-logo">
 
+      <img src="images/iberdrola.png"
+           alt="Iberdrola Foundation"
+           class="funding-logo">
+
+      <img src="images/ministerio.png"
+           alt="Spanish Ministry of Science"
+           class="funding-logo">
+
+      <img src="images/embajada-francia.png"
+           alt="French Embassy in Spain"
+           class="funding-logo">
+
+      <img src="images/mit-energy-initiative.png"
+           alt="MIT Energy Initiative"
+           class="funding-logo">
+
+    </div>
+  </div>
 </section>
 
 
