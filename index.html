@@ -3,11 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Alfonso J. Carrillo</title>
+
+  <title>Alfonso J. Carrillo | Energy Materials</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    nav {
+      width: 100%;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #777;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 12%;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      line-height: 1.1;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: 23px;
+      font-weight: 400;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 760px;
+      margin-bottom: 35px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 11px 20px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #222;
+      text-decoration: none;
+      color: #222;
+      border-radius: 4px;
+    }
+
+    .buttons a:hover {
+      background: #222;
+      color: white;
+    }
+
+    section {
+      padding: 75px 12%;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+    }
+
+    .research-card {
+      border-top: 3px solid #222;
+      padding-top: 20px;
+    }
+
+    .research-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    footer {
+      padding: 35px 12%;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav .links {
+        display: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Dr. Alfonso J. Carrillo</h1>
-  <p>Tenured Scientist at CSIC · Institute of Chemical Technology (ITQ)</p>
-  <p>Energy materials · Nanoparticle exsolution · Thermochemical energy storage · Renewable fuels</p>
+
+<nav>
+  <div class="name">Alfonso J. Carrillo</div>
+
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<div class="hero">
+
+  <div class="hero-content">
+
+    <h1>Alfonso J. Carrillo</h1>
+
+    <h2>
+      Tenured Scientist · CSIC<br>
+      Institute of Chemical Technology (ITQ), Valencia
+    </h2>
+
+    <p>
+      Developing advanced redox materials and catalytic interfaces
+      for renewable fuel production, energy conversion and
+      thermochemical energy storage.
+    </p>
+
+    <div class="buttons">
+
+      <a href="#research">Research</a>
+
+      <a href="#publications">Publications</a>
+
+      <a href="#contact">Contact</a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<section id="research">
+
+  <h2>Research</h2>
+
+  <div class="research-grid">
+
+    <div class="research-card">
+      <h3>Nanoparticle Exsolution</h3>
+      <p>
+        Engineering metal–oxide interfaces through controlled
+        nanoparticle exsolution for catalysis and electrochemical
+        energy conversion.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <h3>Renewable Fuels</h3>
+      <p>
+        Redox materials and catalytic processes for hydrogen
+        production, CO₂ conversion and solar fuel generation.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <h3>Energy Storage</h3>
+      <p>
+        Redox-active oxides and reactor concepts for high-temperature
+        thermochemical energy storage.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="publications">
+
+  <h2>Selected Publications</h2>
+
+  <p>
+    Selected publications will appear here.
+  </p>
+
+</section>
+
+
+<section id="projects">
+
+  <h2>Projects</h2>
+
+  <p>
+    Current and selected research projects will appear here.
+  </p>
+
+</section>
+
+
+<section id="contact">
+
+  <h2>Contact</h2>
+
+  <p>
+    Institute of Chemical Technology (ITQ)<br>
+    CSIC – Universitat Politècnica de València<br>
+    Valencia, Spain
+  </p>
+
+</section>
+
+
+<footer>
+
+  © 2026 Alfonso J. Carrillo
+
+</footer>
+
 </body>
 </html>
