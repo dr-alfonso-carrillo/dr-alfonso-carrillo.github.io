@@ -1,26 +1,239 @@
-<!-- =========================
-     CV
-========================= -->
+<!DOCTYPE html>
+<html lang="en">
 
-<section id="cv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Full-width image -->
-  <div class="cv-banner">
-    <img src="CV.jpg"
-         alt="Scientific presentation">
-  </div>
+  <title>CV | Alfonso J. Carrillo</title>
 
-  <!-- CV text -->
-  <div class="cv-content">
+  <style>
 
-    <h2>Curriculum Vitae</h2>
+    /* =========================
+       GENERAL
+    ========================= */
 
-    <div class="cv-text">
-      <p>
-        Your CV text goes here.
-      </p>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+
+    /* =========================
+       TOP NAVIGATION
+    ========================= */
+
+    .top-nav {
+      padding: 25px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+    }
+
+    .nav-name {
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #222;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #222;
+      font-size: 15px;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.55;
+    }
+
+    /* Highlight current page */
+    .nav-links a.active {
+      font-weight: 600;
+    }
+
+
+    /* =========================
+       CV BANNER
+    ========================= */
+
+    .cv-banner {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cv-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+    /* =========================
+       CV CONTENT
+    ========================= */
+
+    .cv-content {
+      padding: 60px 0 90px;
+    }
+
+    .cv-header {
+      margin-bottom: 35px;
+    }
+
+    .cv-header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    .cv-line {
+      width: 100%;
+      height: 2px;
+      background: #222;
+      margin-top: 15px;
+    }
+
+    .cv-text {
+      max-width: 1000px;
+    }
+
+    .cv-text p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 0;
+      text-align: justify;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 768px) {
+
+      .top-nav {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 22px;
+      }
+
+      .cv-content {
+        padding: 40px 0 60px;
+      }
+
+      .cv-header h1 {
+        font-size: 30px;
+      }
+
+      .cv-text p {
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: left;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       TOP NAVIGATION
+  ========================== -->
+
+  <nav class="top-nav">
+
+    <a href="index.html" class="nav-name">
+      Alfonso J. Carrillo
+    </a>
+
+    <div class="nav-links">
+
+      <a href="index.html">Home</a>
+
+      <a href="publications.html">Publications</a>
+
+      <a href="cv.html" class="active">CV</a>
+
+      <a href="gallery.html">Gallery</a>
+
+      <a href="news.html">News</a>
+
     </div>
 
+  </nav>
+
+
+  <!-- =========================
+       CV BANNER
+  ========================== -->
+
+  <div class="cv-banner">
+
+    <img src="cv-banner.png"
+         alt="Scientific presentation">
+
   </div>
 
-</section>
+
+  <!-- =========================
+       CV CONTENT
+  ========================== -->
+
+  <main class="cv-content">
+
+    <div class="container">
+
+      <div class="cv-header">
+
+        <h1>Curriculum Vitae</h1>
+
+        <div class="cv-line"></div>
+
+      </div>
+
+
+      <div class="cv-text">
+
+        <p>
+          Your CV text goes here. This is where we will add your academic
+          biography, including your scientific career, international
+          experience, current position and main research achievements.
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+</body>
+
+</html>
