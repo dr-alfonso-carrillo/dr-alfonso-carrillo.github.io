@@ -26,6 +26,56 @@
     margin: 20px auto;
       object-fit: contain;
     }
+    /* SELECTED PUBLICATIONS */
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  max-width: 1000px;
+}
+
+.publication {
+  padding-bottom: 45px;
+  border-bottom: 1px solid #ddd;
+}
+
+.publication:last-child {
+  border-bottom: none;
+}
+
+.publication h3 {
+  font-size: 22px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.publication h3 a {
+  color: #222;
+  text-decoration: none;
+}
+
+.publication h3 a:hover {
+  text-decoration: underline;
+}
+
+.publication-info {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+
+.publication-image {
+  margin-top: 20px;
+}
+
+.publication-image img {
+  width: auto;
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  display: block;
+}
 
     /* NAVIGATION */
 
@@ -349,28 +399,149 @@ in Valencia, Spain.
 
 <section id="publications">
 
-  <h2>
-    Selected Publications
-  </h2>
+  <h2>Selected Publications</h2>
 
-  <p>
-    B. Delgado-Galicia, A. López-García, C.E. Jiménez, R. Suarez-Anzorena, M. Bär, V. Pérez-Dieste, A. Aguadero, J.A. Alonso, I. Puente-Orench, L. Almar, A.J. Carrillo, J.M. Serra, Impact of Phase-Separated Janus-Type Formation on the Reversibility of Multicomponent Exsolved Nanoparticles from Complex Perovskites, ACS Nano 20 (2026) 14155–14169. https://doi.org/10.1021/acsnano.6c01371.
-    
-    
-    A. López‐García, E. Barrio‐Querol, Á. Represa, J. Ara, A.B. Hungría, D. Catalán‐Martínez, A.J. Carrillo, S. Escolástico, J.M. Serra, Acceptor‐Doped Cerium Oxides Enabling Metallic Nanocatalyst Exsolution for Hydrogen Production From Ammonia, Angew. Chemie Int. Ed. (2026). https://doi.org/10.1002/anie.6182981.
-   
-    
-    A. López-García, A.J. Carrillo, C.E. Jiménez, R.S. Anzorena, R. Garcia-Diez, V. Pérez-Dieste, I.J. Villar-Garcia, A.B. Hungría, M. Bär, J.M. Serra, Understanding the evolution of ternary alloyed nanoparticles during reversible exsolution from double perovskite oxides, J. Mater. Chem. A 12 (2024) 22609–22626. https://doi.org/10.1039/D4TA03146F.
-   
-    
-    A. López‐García, S. Remiro‐Buenamañana, D. Neagu, A.J. Carrillo, J.M. Serra, Squeezing Out Nanoparticles from Perovskites: Controlling Exsolution with Pressure, Small 2403544 (2024) 1–11. https://doi.org/10.1002/smll.202403544.
-    
-    
-    A. López-García, A. Domínguez-Saldaña, A.J. Carrillo, L. Navarrete, M.I. Valls, B. García-Baños, P.J. Plaza-Gonzalez, J.M. Catala-Civera, J.M. Serra, Microwave-Driven Exsolution of Ni Nanoparticles in A-Site Deficient Perovskites, ACS Nano 17 (2023) 23955–23964. https://doi.org/10.1021/acsnano.3c08534.
+  <div class="publications-list">
 
 
+    <!-- PAPER 1 -->
 
-  </p>
+    <div class="publication">
+
+      <h3>
+        <a href="https://doi.org/10.1021/acsnano.6c01371"
+           target="_blank">
+          Impact of Phase-Separated Janus-Type Formation on the Reversibility
+          of Multicomponent Exsolved Nanoparticles from Complex Perovskites
+        </a>
+      </h3>
+
+      <p class="publication-info">
+        B. Delgado-Galicia, A. López-García, C.E. Jiménez,
+        R. Suarez-Anzorena, M. Bär, V. Pérez-Dieste, A. Aguadero,
+        J.A. Alonso, I. Puente-Orench, L. Almar,
+        <strong>A.J. Carrillo</strong>, J.M. Serra<br>
+        <em>ACS Nano</em> 20 (2026) 14155–14169
+      </p>
+
+      <div class="publication-image">
+        <img src="janus-exsolution.jpg"
+             alt="Graphical abstract - Janus-type nanoparticle exsolution">
+      </div>
+
+    </div>
+
+
+    <!-- PAPER 2 -->
+
+    <div class="publication">
+
+      <h3>
+        <a href="https://doi.org/10.1002/anie.6182981"
+           target="_blank">
+          Acceptor-Doped Cerium Oxides Enabling Metallic Nanocatalyst
+          Exsolution for Hydrogen Production From Ammonia
+        </a>
+      </h3>
+
+      <p class="publication-info">
+        A. López-García, E. Barrio-Querol, Á. Represa, J. Ara,
+        A.B. Hungría, D. Catalán-Martínez,
+        <strong>A.J. Carrillo</strong>, S. Escolástico, J.M. Serra<br>
+        <em>Angewandte Chemie International Edition</em> (2026)
+      </p>
+
+      <div class="publication-image">
+        <img src="ceria-exsolution.jpg"
+             alt="Graphical abstract - exsolution from cerium oxides">
+      </div>
+
+    </div>
+
+
+    <!-- PAPER 3 -->
+
+    <div class="publication">
+
+      <h3>
+        <a href="https://doi.org/10.1039/D4TA03146F"
+           target="_blank">
+          Understanding the Evolution of Ternary Alloyed Nanoparticles
+          During Reversible Exsolution from Double Perovskite Oxides
+        </a>
+      </h3>
+
+      <p class="publication-info">
+        A. López-García, <strong>A.J. Carrillo</strong>,
+        C.E. Jiménez, R.S. Anzorena, R. Garcia-Diez,
+        V. Pérez-Dieste, I.J. Villar-Garcia, A.B. Hungría,
+        M. Bär, J.M. Serra<br>
+        <em>Journal of Materials Chemistry A</em> 12 (2024) 22609–22626
+      </p>
+
+      <div class="publication-image">
+        <img src="ternary-exsolution.jpg"
+             alt="Graphical abstract - ternary alloy nanoparticle exsolution">
+      </div>
+
+    </div>
+
+
+    <!-- PAPER 4 -->
+
+    <div class="publication">
+
+      <h3>
+        <a href="https://doi.org/10.1002/smll.202403544"
+           target="_blank">
+          Squeezing Out Nanoparticles from Perovskites:
+          Controlling Exsolution with Pressure
+        </a>
+      </h3>
+
+      <p class="publication-info">
+        A. López-García, S. Remiro-Buenamañana, D. Neagu,
+        <strong>A.J. Carrillo</strong>, J.M. Serra<br>
+        <em>Small</em> (2024), 2403544
+      </p>
+
+      <div class="publication-image">
+        <img src="pressure-exsolution.jpg"
+             alt="Graphical abstract - pressure-controlled nanoparticle exsolution">
+      </div>
+
+    </div>
+
+
+    <!-- PAPER 5 -->
+
+    <div class="publication">
+
+      <h3>
+        <a href="https://doi.org/10.1021/acsnano.3c08534"
+           target="_blank">
+          Microwave-Driven Exsolution of Ni Nanoparticles
+          in A-Site Deficient Perovskites
+        </a>
+      </h3>
+
+      <p class="publication-info">
+        A. López-García, A. Domínguez-Saldaña,
+        <strong>A.J. Carrillo</strong>, L. Navarrete, M.I. Valls,
+        B. García-Baños, P.J. Plaza-Gonzalez,
+        J.M. Catala-Civera, J.M. Serra<br>
+        <em>ACS Nano</em> 17 (2023) 23955–23964
+      </p>
+
+      <div class="publication-image">
+        <img src="microwave-exsolution.jpg"
+             alt="Graphical abstract - microwave-driven Ni exsolution">
+      </div>
+
+    </div>
+
+
+  </div>
 
 </section>
 
