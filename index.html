@@ -259,7 +259,55 @@
 .funding-logo:hover {
   transform: scale(1.07);
 }
+/* CONTACT LOGOS */
 
+.contact-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-top: 35px;
+}
+
+.contact-logos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.contact-logos a:hover {
+  transform: translateY(-5px);
+  opacity: 0.75;
+}
+
+.contact-logos img {
+  max-width: 130px;
+  max-height: 65px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Social media logos slightly smaller */
+.contact-logos a:nth-child(3) img,
+.contact-logos a:nth-child(4) img,
+.contact-logos a:nth-child(5) img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .contact-logos {
+    gap: 30px;
+  }
+
+  .contact-logos img {
+    max-width: 100px;
+    max-height: 55px;
+  }
+}
 /* Mobile */
 @media (max-width: 768px) {
 
