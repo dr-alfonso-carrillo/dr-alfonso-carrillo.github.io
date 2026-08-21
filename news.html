@@ -9,62 +9,69 @@
 
   <style>
 
-    /* =========================
-       GENERAL
-    ========================= */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
-      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       color: #222;
       background: #fff;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
+      line-height: 1.6;
     }
 
 
     /* =========================
-       TOP NAVIGATION
+       NAVIGATION
     ========================= */
 
-    .top-nav {
-      padding: 25px 5%;
+    nav {
+      width: 100%;
+      padding: 22px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 1px solid #eee;
       background: white;
     }
 
-    .nav-name {
+    .name {
       font-size: 20px;
-      font-weight: 600;
-      text-decoration: none;
-      color: #222;
+      font-weight: 700;
     }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .nav-links a {
+    nav a {
+      color: #333;
       text-decoration: none;
-      color: #222;
+      margin-left: 25px;
       font-size: 15px;
-      transition: opacity 0.2s ease;
     }
 
-    .nav-links a:hover {
-      opacity: 0.55;
+    nav a:hover {
+      color: #777;
     }
 
-    .nav-links a.active {
-      font-weight: 600;
+
+    /* =========================
+       PAGE HEADER
+    ========================= */
+
+    .page-header {
+      padding: 70px 12% 35px;
+      max-width: 1200px;
+    }
+
+    .page-header h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .page-header p {
+      font-size: 18px;
+      color: #555;
+      max-width: 750px;
     }
 
 
@@ -72,97 +79,78 @@
        NEWS
     ========================= */
 
-    .news-content {
-      padding: 50px 0 90px;
+    .news {
+      padding: 20px 12% 80px;
+      max-width: 1400px;
     }
 
-    .news-header {
-      margin-bottom: 45px;
-    }
-
-    .news-header h1 {
-      margin: 0;
-      font-size: 36px;
-      font-weight: 600;
-    }
-
-    .news-line {
-      width: 100%;
-      height: 2px;
-      background: #222;
-      margin-top: 15px;
-    }
-
-    .news-intro {
-      max-width: 850px;
-      font-size: 18px;
-      line-height: 1.7;
-      margin-bottom: 45px;
-    }
-
-
-    /* =========================
-       NEWS ITEMS
-    ========================= */
-
-    .news-list {
-      display: flex;
-      flex-direction: column;
+    .year {
+      font-size: 30px;
+      margin-top: 45px;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #222;
     }
 
     .news-item {
       display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 35px;
-      padding: 35px 0;
-      border-top: 1px solid #ccc;
-    }
-
-    .news-item:last-child {
-      border-bottom: 1px solid #ccc;
+      grid-template-columns: 130px 1fr;
+      gap: 25px;
+      padding: 25px 0;
+      border-bottom: 1px solid #eee;
     }
 
     .news-date {
       font-size: 15px;
-      font-weight: 600;
-      color: #555;
+      font-weight: 700;
+      color: #666;
     }
 
-    .news-body h2 {
-      margin: 0 0 12px;
-      font-size: 23px;
-      font-weight: 600;
+    .news-content h2 {
+      font-size: 21px;
+      margin-bottom: 8px;
     }
 
-    .news-body p {
-      margin: 0;
-      font-size: 17px;
-      line-height: 1.7;
+    .news-content p {
+      font-size: 16px;
+      color: #444;
       max-width: 850px;
     }
 
-    .news-body a {
-      color: #222;
+    .news-content a {
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .news-content a:hover {
       text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .news-body a:hover {
-      opacity: 0.6;
     }
 
 
-    /* Optional image */
+    /* Optional image inside a news item */
 
     .news-image {
-      margin-top: 20px;
+      margin-top: 18px;
     }
 
     .news-image img {
       width: 100%;
-      max-width: 650px;
+      max-width: 600px;
       height: auto;
       display: block;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 35px 12%;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 14px;
     }
 
 
@@ -170,35 +158,19 @@
        MOBILE
     ========================= */
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
 
-      .top-nav {
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px 22px;
+      .page-header h1 {
+        font-size: 38px;
       }
 
       .news-item {
         grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 28px 0;
+        gap: 8px;
       }
 
-      .news-header h1 {
-        font-size: 30px;
-      }
-
-      .news-body h2 {
-        font-size: 21px;
-      }
-
-      .news-body p {
-        font-size: 16px;
+      nav .links {
+        display: none;
       }
 
     }
@@ -211,138 +183,136 @@
 <body>
 
 
-  <!-- =========================
-       TOP NAVIGATION
-  ========================== -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-  <nav class="top-nav">
+<nav>
 
-    <a href="index.html" class="nav-name">
+  <div class="name">
+    <a href="index.html"
+       style="margin-left:0; font-size:20px; font-weight:700;">
       Alfonso J. Carrillo
     </a>
+  </div>
 
-    <div class="nav-links">
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="cv.html">CV</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+  </div>
 
-      <a href="index.html">Home</a>
+</nav>
 
-      <a href="publications.html">Publications</a>
 
-      <a href="cv.html">CV</a>
+<!-- =========================
+     PAGE HEADER
+========================= -->
 
-      <a href="gallery.html">Gallery</a>
+<div class="page-header">
 
-      <a href="news.html" class="active">News</a>
+  <h1>News</h1>
 
+  <p>
+    Latest news, research activities, conferences, publications,
+    projects and other scientific updates.
+  </p>
+
+</div>
+
+
+<!-- =========================
+     NEWS
+========================= -->
+
+<div class="news">
+
+
+  <!-- 2026 -->
+
+  <h2 class="year">2026</h2>
+
+
+  <!-- NEWS ITEM -->
+
+  <div class="news-item">
+
+    <div class="news-date">
+      August 2026
     </div>
 
-  </nav>
+    <div class="news-content">
 
+      <h2>News title goes here</h2>
 
-  <!-- =========================
-       NEWS CONTENT
-  ========================== -->
-
-  <main class="news-content">
-
-    <div class="container">
-
-      <div class="news-header">
-
-        <h1>News</h1>
-
-        <div class="news-line"></div>
-
-      </div>
-
-
-      <p class="news-intro">
-        Latest news, research activities, conferences, awards and other
-        updates.
+      <p>
+        Write the description of the news here. You can include information
+        about a publication, conference, new project, award, research visit
+        or any other relevant activity.
       </p>
 
+    </div>
 
-      <div class="news-list">
-
-
-        <!-- NEWS ITEM 1 -->
-
-        <article class="news-item">
-
-          <div class="news-date">
-            August 2026
-          </div>
-
-          <div class="news-body">
-
-            <h2>
-              News title goes here
-            </h2>
-
-            <p>
-              Write a short description of the news here. You can mention
-              a new publication, project, conference, award or any other
-              relevant scientific activity.
-            </p>
-
-          </div>
-
-        </article>
+  </div>
 
 
-        <!-- NEWS ITEM 2 -->
+  <!-- NEWS ITEM -->
 
-        <article class="news-item">
+  <div class="news-item">
 
-          <div class="news-date">
-            July 2026
-          </div>
+    <div class="news-date">
+      July 2026
+    </div>
 
-          <div class="news-body">
+    <div class="news-content">
 
-            <h2>
-              Another news item
-            </h2>
+      <h2>Another news item</h2>
 
-            <p>
-              Add the description here. If you want to include a link,
-              you can write something like
-              <a href="YOUR-LINK" target="_blank">read more</a>.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <!-- NEWS ITEM 3 -->
-
-        <article class="news-item">
-
-          <div class="news-date">
-            January 2026
-          </div>
-
-          <div class="news-body">
-
-            <h2>
-              Got tenured!
-            </h2>
-
-            <p>
-              From 2nd January 2026 I got officially my position as CSIC Tenured Scientist. Happy to continue my research at the ECS group at ITQ!
-            </p>
-
-          </div>
-
-        </article>
-
-
-      </div>
+      <p>
+        Add your news text here. You can also include a
+        <a href="YOUR-LINK" target="_blank">link</a>
+        if you want visitors to access additional information.
+      </p>
 
     </div>
 
-  </main>
+  </div>
+
+
+  <!-- NEWS ITEM -->
+
+  <div class="news-item">
+
+    <div class="news-date">
+      June 2026
+    </div>
+
+    <div class="news-content">
+
+      <h2>Another update</h2>
+
+      <p>
+        Add your news text here.
+      </p>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+  © 2026 Alfonso J. Carrillo
+</footer>
+
 
 </body>
-
 </html>
